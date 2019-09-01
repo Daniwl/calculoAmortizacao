@@ -10,7 +10,7 @@
         
         <h1>Calculo</h1>
         <br>
-        <a href="/amortizacao-americana.jsp">Amortização Americana</a>
+        
         <br>
         <h2>Integrantes</h2>
         <h3>Daniel - Amortização Americana</h3>
@@ -18,6 +18,7 @@
         <h3>Sabrina - Tabela Price</h3>
         
         <h3><a href="amortizacao-constante.jsp">Amortização Constante</a></h3>
+        <h3><a href="amortizacao-americana.jsp">Amortização Americana</a></h3>
         
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
