@@ -21,10 +21,10 @@
         <table border="1">
             <tr>
                 <td> Número de parcelas </td>
-                <td> Valor da parcela </td>
+                <td> Saldo devedor </td>
                 <td> Amortização </td>
                 <td> Juros </td>
-                <td> Saldo devedor </td>
+                <td> Prestação </td>
             </tr>
             <% try{
              double c = Double.parseDouble(request.getParameter("c")); 
