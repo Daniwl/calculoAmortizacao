@@ -25,7 +25,7 @@
                 <td> Saldo devedor </td>
                 <td> Amortização </td>
                 <td> Juros </td>
-                <td> Valor da parcela </td>
+                <td> Prestação </td>
             </tr>
             <% DecimalFormat df = new DecimalFormat("R$0.00");
                 try{
