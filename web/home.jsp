@@ -17,8 +17,9 @@
         <h3>Guilherme - Amortização Constante</h3>
         <h3>Sabrina - Tabela Price</h3>
         
-        <h3><a href="amortizacao-constante.jsp">Amortização Constante</a></h3>
-        <h3><a href="amortizacao-americana.jsp">Amortização Americana</a></h3>
+        <h3><a href="amortizacao-constante.jsp">Cálculo Amortização Constante</a></h3>
+        <h3><a href="amortizacao-americana.jsp">Cálculo Amortização Americana</a></h3>
+        <h3><a href="tabela-price.jsp">Cálculo Tabela Price</a></h3>
         
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>

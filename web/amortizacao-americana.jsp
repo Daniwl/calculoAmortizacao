@@ -1,4 +1,5 @@
 
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -21,12 +22,13 @@
         <table border="1">
             <tr>
                 <td> Número de parcelas </td>
-                <td> Valor da parcela </td>
+                <td> Saldo devedor </td>
                 <td> Amortização </td>
                 <td> Juros </td>
-                <td> Saldo devedor </td>
+                <td> Valor da parcela </td>
             </tr>
-            <% try{
+            <% DecimalFormat df = new DecimalFormat("R$0.00");
+                try{
              double c = Double.parseDouble(request.getParameter("c")); 
              int n = Integer.parseInt(request.getParameter("n")); 
              double i = Double.parseDouble(request.getParameter("i")); 
@@ -38,10 +40,10 @@
             %>    
             <tr>
                 <td> <%=a%> </td>
-                <td> <%=c%> </td>
+                <td> <%=df.format(c)%> </td>
                 <td> - </td>
-                <td> <%=juros%> </td>
-                <td> <%=juros%> </td>
+                <td> <%=df.format(juros)%> </td>
+                <td> <%=df.format(juros)%> </td>
                 
             </tr>
             <%prestacao += juros;
@@ -49,17 +51,17 @@
             <tr>
                 <td> <%=a%> </td>
                 <td> - </td>
-                <td> <%=c%> </td>
-                <td> <%=juros%> </td>
-                <td> <%=c+juros%> </td>
+                <td> <%=df.format(c)%> </td>
+                <td> <%=df.format(juros)%> </td>
+                <td> <%=df.format(c+juros)%> </td>
                 
             </tr>
             <tr>
                 <td> Total </td>
                 <td> - </td>
-                <td> <%=c%> </td>
-                <td> <%=prestacao%> </td>
-                <td> <%=c+prestacao%> </td>
+                <td> <%=df.format(c)%> </td>
+                <td> <%=df.format(prestacao)%> </td>
+                <td> <%=df.format(c+prestacao)%> </td>
                 
             </tr>
              

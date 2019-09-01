@@ -4,6 +4,7 @@
     Author     : T-Gamer
 --%>
 
+<%@page import="java.text.DecimalFormat"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,8 @@
             <input type="submit" name="form" value="gerar"/><br><br>
     </form>
    
-        <%double am = 0;
+        <%DecimalFormat df = new DecimalFormat("R$0.00");
+            double am = 0;
         double j = 0;
         double pv = 0;
         double pmt = 0;%>
@@ -51,7 +53,7 @@
         <td> - </td>
         <td> - </td>
         <td> - </td>
-        <td> <%=sald%> </td>
+        <td> <%=df.format(sald)%> </td>
     </tr>
 
         <%
@@ -65,10 +67,10 @@
 
     <tr>
         <td> <%=a%> </td>
-        <td><%=pmt%></td>
-        <td><%=am%></td>
-        <td><%=j%></td>
-        <td><%=sald%></td>
+        <td><%=df.format(pmt)%></td>
+        <td><%=df.format(am)%></td>
+        <td><%=df.format(j)%></td>
+        <td><%=df.format(sald)%></td>
     </tr>
     
 
