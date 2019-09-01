@@ -10,6 +10,7 @@
         
         <h1>Calculo</h1>
         <br>
+        <a href="/amortizacao-americana.jsp">Amortização Americana</a>
         <br>
         <h2>Integrantes</h2>
         <h3>Daniel - Amortização Americana</h3>
