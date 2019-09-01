@@ -1,3 +1,9 @@
 <%-- any content can be specified here e.g.: --%>
 <%@ page pageEncoding="UTF-8" %>
-<h2>Hello World!</h2>
+<hr/>
+<u>
+<h2><b>Menu</b></h2>
+<h3><a href="amortizacao-constante.jsp">Cálculo Amortização Constante</a></h3>
+        <h3><a href="amortizacao-americana.jsp">Cálculo Amortização Americana</a></h3>
+        <h3><a href="tabela-price.jsp">Cálculo Tabela Price</a></h3>
+</u>

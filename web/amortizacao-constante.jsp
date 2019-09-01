@@ -11,17 +11,22 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Amortização Constante</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
     </head>
     <body>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
+        <div align ="center">
         <h1>Amortização Constante</h1>
         
     <form action="amortizacao-constante.jsp">
             
             Valor do empréstimo: <input type="text" name="sald"/><br><br>
             Número de parcelas mensais: <input type="text" name="n"/><br><br>
-            taxa mensal: <input type="text" name="i"/><br><br>
-            <input type="submit" name="form" value="gerar"/><br><br>
+            taxa mensal(%): <input type="text" name="i"/><br><br>
+            <input type="submit" name="form" value="Gerar"/><br><br>
+            
     </form>
    
         <%DecimalFormat df = new DecimalFormat("R$0.00");
@@ -79,6 +84,7 @@
         
         <%}%>
         </table>
+        </div>
         
         
         <%@include file="WEB-INF/jspf/rodape.jspf" %>

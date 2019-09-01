@@ -3,24 +3,27 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Calculo da Amortização</title>
+        <title>Home</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+              crossorigin="anonymous">
     </head>
     <body>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
-        
-        <h1>Calculo</h1>
+        <div align="center">
+        <h1><b>Calculo de Amortização</b></h1>
         <br>
         
-        <br>
-        <h2>Integrantes</h2>
+        
+        <h2><b>Integrantes</b></h2>
         <h3>Daniel - Amortização Americana</h3>
         <h3>Guilherme - Amortização Constante</h3>
-        <h3>Sabrina - Tabela Price</h3>
+        <h3>Sabrina - Tabela Price</h3><br>
         
-        <h3><a href="amortizacao-constante.jsp">Cálculo Amortização Constante</a></h3>
-        <h3><a href="amortizacao-americana.jsp">Cálculo Amortização Americana</a></h3>
-        <h3><a href="tabela-price.jsp">Cálculo Tabela Price</a></h3>
+       
         
+        <%@include file="WEB-INF/jspf/menu.jspf" %>
+         </div>
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
 </html>
