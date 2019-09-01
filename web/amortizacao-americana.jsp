@@ -15,8 +15,6 @@
             <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
             <div align ="center">
             <h1>Amortização Americana</h1>
-        
-        
             <form>
                 Valor do empréstimo: <input type="number" name="c"/><br><br>
                 Número de parcelas mensais: <input type="number" name="n"/><br><br>
@@ -70,13 +68,16 @@
             </tr>
              
         </table>
-            </div>
+            
             <%
                
             }catch(Exception ex){
                 
             } %>
-             
-           
+             </div>
+            
     </body>
+     <div align="left">
+          <%@include file="WEB-INF/jspf/rodape.jspf" %>
+          </div>
 </html>
