@@ -66,18 +66,17 @@
                 <td> <%=df.format(c+prestacao)%> </td>
                 
             </tr>
-             
-        </table>
-            
-            <%
+             <%
                
             }catch(Exception ex){
                 
             } %>
-             </div>
+        </table>
             
+            
+             </div>
+             
+          <%@include file="WEB-INF/jspf/rodape.jspf" %>       
     </body>
-     <div align="left">
-          <%@include file="WEB-INF/jspf/rodape.jspf" %>
-          </div>
+     
 </html>

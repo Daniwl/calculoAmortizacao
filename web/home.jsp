@@ -10,11 +10,13 @@
     </head>
     <body>
         <%@include file="WEB-INF/jspf/cabecalho.jspf" %>
-        <div align="center">
+        <div align="center"> 
         <h1><b>Calculo de Amortização</b></h1>
         <br>
         
-        
+        <h2>A aplicação é resposável por calcular 3 tipos de amortização</h2>
+        <br>
+        <br>
         <h2><b>Integrantes</b></h2>
         <h3>Daniel - Amortização Americana</h3>
         <h3>Guilherme - Amortização Constante</h3>
@@ -22,7 +24,7 @@
         
        
         
-        <%@include file="WEB-INF/jspf/menu.jspf" %>
+       
          </div>
         <%@include file="WEB-INF/jspf/rodape.jspf" %>
     </body>
