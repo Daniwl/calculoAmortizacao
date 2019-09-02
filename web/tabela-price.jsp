@@ -24,7 +24,7 @@
             
             Valor do empréstimo: <input type="text" name="sald"/><br><br>
             Número de parcelas mensais: <input type="text" name="n"/><br><br>
-            taxa mensal(%): <input type="text" name="i"/><br><br>
+            Taxa mensal(%): <input type="text" name="i"/><br><br>
             <input type="submit" name="form" value="Gerar"/><br><br>
     </form>
    
@@ -45,9 +45,9 @@
 
         <%
             try{
-        double sald = Integer.parseInt(request.getParameter("sald"));;
+        double sald = Double.parseDouble(request.getParameter("sald"));;
         int n = Integer.parseInt(request.getParameter("n"));; 
-        double i = Integer.parseInt(request.getParameter("i"));
+        double i = Double.parseDouble(request.getParameter("i"));
         
         i = i/100;
        
