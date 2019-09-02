@@ -24,7 +24,7 @@
             
             Valor do empréstimo: <input type="text" name="sald"/><br><br>
             Número de parcelas mensais: <input type="text" name="n"/><br><br>
-            taxa mensal(%): <input type="text" name="i"/><br><br>
+            Taxa mensal(%): <input type="text" name="i"/><br><br>
             <input type="submit" name="form" value="Gerar"/><br><br>
     </form>
    
