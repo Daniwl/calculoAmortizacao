@@ -16,7 +16,7 @@
             <div align ="center">
             <h1>Amortização Americana</h1>
             <form>
-                Valor do empréstimo: <input type="number" name="c"/><br><br>
+                Valor do empréstimo: <input type="text" name="c"/><br><br>
                 Número de parcelas mensais: <input type="number" name="n"/><br><br>
                 Taxa mensal(%): <input type="text" name="i"/><br><br>
                 <input type="submit" name="form" value="Gerar"/><br><br>
