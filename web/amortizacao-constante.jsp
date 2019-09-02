@@ -45,9 +45,9 @@
 
         <%
             try{
-        double sald = Integer.parseInt(request.getParameter("sald"));;
+        double sald = Double.parseDouble(request.getParameter("sald"));;
         int n = Integer.parseInt(request.getParameter("n"));; 
-        double i = Integer.parseInt(request.getParameter("i"));
+        double i = Double.parseDouble(request.getParameter("i"));
         
         i = i/100;
         am = sald / n;
